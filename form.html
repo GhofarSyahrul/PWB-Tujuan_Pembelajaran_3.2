@@ -4,51 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halaman | SignUp</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+      body {
+        font-family: rubik, sans-serif;
+        background-color: #f4f4f4;
+        margin: 25px;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        
+      }
+
+      h2 {
+        text-align: center;
+        text-transform: lowercase;
+        padding-inline-start: 10px;
+      }
+
+      form {
+        font-family: poppins, sans-serif;
+        max-width: 500px;
+        margin: auto;
+        background: #ffffff;
+        padding: 6vh;
+        height: 64rem;
+        border-radius: 45px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        font-family: poppins, sans-serif;
+        text-size-adjust: 20px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      /* input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      } */
+
+      a {
+        text-decoration: none;
+        margin-right: 2px;
+      }
+
+      .signIn-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 9px 18px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .signIn-button:hover {
+        background-color: #0056b3;
+      }
+
+      .back-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 9px 18px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .back-button:hover {
+        background-color: #0056b3;
+      }
+
+      .btn-input {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        size: 100px;
+      }
+    </style>
   </head>
   <body>
     <h1>Buat account Baru</h1>
     <h2>Sign up form</h2>
     <br />
-    <label for="First-nama">First Name :</label><br /><br />
-    <input type="text" name="First-nama" id="First-nama" /><br /><br />
-    <label for="last-name">Last Name :</label><br /><br />
-    <input type="text" name="last-name" id="last-name" />
-    <br /><br />
-    <label for="gender">Gender</label><br /><br />
-    <input type="radio" name="input-gender" id="gender-option1" />
-    <label for="gen">Lanang</label><br />
-    <input type="radio" name="input-gender" id="gender-option2" />
-    <label for="gender-option2">cwek</label><br />
-    <input type="radio" name="input-gender" id="gender-option3" />
-    <label for="gender-option3">Opsional</label>
-    <br /><br />
-    <label for="negara">Nationality</label><br /><br />
-    <select name="negara" id="dropdown-negara">
-      <option value="konoha">konoha</option>
-      <option value="bekasi">Bekasi</option>
-      <option value="dengklok-selatan" selected>Dengklok selatan</option>
-      <option value="javanese">Jawa</option>
-      <option value="indonesia">indonesia</option>
-    </select>
-    <br /><br />
-    <label for="bahasa">Language spoken</label><br /><br />
-    <input type="checkbox" name="bahasa" id="input-bahasa" />jawir<br />
-    <input type="checkbox" name="bahasa" id="input-bahasa" />Dengklokske<br />
-    <input type="checkbox" name="bahasa" id="input-bahasa" />suwir <br />
-    <input type="checkbox" name="bahasa" id="input-bahasa" />konoha <br />
-    <input type="checkbox" name="bahasa" id="input-bahasa" />indonesia <br />
-    <input type="checkbox" name="bahasa" id="input-bahasa" />zimbabwe <br />
-    <br /><br />
-    <label for="bio-textarea">Bio</label><br /><br />
-    <textarea name="bio-textarea" id="bio" cols="30" rows="5">
-Ayo isi aku gaes...</textarea
-    >
-    <br /><br />
-    <a href="welcome.html">
-        <input type="submit" value="Sign in" />
-    </a>
-    <a href="index.html">
-      <input type="submit" value="Kembali">
-    </a>
+    <form>
+      <label for="First-nama">First Name :</label><br /><br />
+      <input type="text" name="First-nama" id="First-nama" /><br /><br />
+      <label for="last-name">Last Name :</label><br /><br />
+      <input type="text" name="last-name" id="last-name" />
+      <br /><br />
+      <label for="gender">Gender</label><br /><br />
+      <input type="radio" name="input-gender" id="gender-option1" />
+      <label for="gender-option1">Lanang</label><br />
+      <input type="radio" name="input-gender" id="gender-option2" />
+      <label for="gender-option2">cwek</label><br />
+      <input type="radio" name="input-gender" id="gender-option3" />
+      <label for="gender-option3">Opsional</label>
+      <br /><br />
+      <label for="negara">Nationality</label><br /><br />
+      <select name="negara" id="dropdown-negara">
+        <option value="konoha">konoha</option>
+        <option value="bekasi">Bekasi</option>
+        <option value="dengklok-selatan" selected>Dengklok selatan</option>
+        <option value="javanese">Jawa</option>
+        <option value="indonesia">indonesia</option>
+      </select>
+      <br /><br />
+      <label for="input-bahasa">Language spoken</label><br /><br />
+      <input type="checkbox" name="bahasa" id="input-bahasa" />jawir<br />
+      <input type="checkbox" name="bahasa" id="input-bahasa" />Dengklokske<br />
+      <input type="checkbox" name="bahasa" id="input-bahasa" />suwir <br />
+      <input type="checkbox" name="bahasa" id="input-bahasa" />konoha <br />
+      <input type="checkbox" name="bahasa" id="input-bahasa" />indonesia <br />
+      <input type="checkbox" name="bahasa" id="input-bahasa" />zimbabwe <br />
+      <br /><br />
+      <label for="bio-textarea">Bio</label><br /><br />
+      <textarea name="bio-textarea" id="bio" cols="30" rows="5">
+Ayo isi aku gaes...
+      </textarea>
+      <br /><br />
+      <div class="btn-input">
+        <a href="welcome.html" class="signIn-button">Sign In</a>
+        <a href="index.html" class="back-button">Kembali</a>
+      </div>
+    </form>
   </body>
 </html>
