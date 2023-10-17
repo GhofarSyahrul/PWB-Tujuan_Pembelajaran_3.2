@@ -77,12 +77,12 @@
         background-color: #0E2954;
       }
 
-      /* a {
+      a {
         text-decoration: none;
         margin-right: 2px;
       } 
 
-       .signIn-button {
+       /* .signIn-button {
         background-color: #1F6E8C;
         color: #fff;
         padding: 9px 18px;
@@ -95,22 +95,23 @@
 
       .signIn-button:hover {
         background-color: #0E2954;
-      }
+      } */
 
       .back-button {
         background-color: #1F6E8C;
         color: #fff;
-        padding: 9px 18px;
+        padding: 5px 10px;
         border: none;
         border-radius: 7px;
         cursor: pointer;
         display: inline-block;
         margin-top: 20px;
+        font-size: 15px;
       }
 
       .back-button:hover {
         background-color: #0E2954;
-      } */
+      }
 
       .btn-input {
         align-items: center;
@@ -135,15 +136,15 @@
       <input type="text" name="last-name" id="last-name" placeholder="Ini juga bre janlup" required>
       <br /><br />
       <label for="gender">Gender</label><br /><br />
-      <input type="radio" name="input-gender" id="gender-option1" />
+      <input type="radio" name="input-gender" id="gender-option1" required/>
       <label for="gender-option1">Lanang</label><br />
-      <input type="radio" name="input-gender" id="gender-option2" />
+      <input type="radio" name="input-gender" id="gender-option2" required/>
       <label for="gender-option2">cwek</label><br />
-      <input type="radio" name="input-gender" id="gender-option3" />
+      <input type="radio" name="input-gender" id="gender-option3" required/>
       <label for="gender-option3">Opsional</label>
       <br /><br />
       <label for="negara">Nationality</label><br /><br />
-      <select name="negara" id="dropdown-negara">
+      <select name="negara" id="dropdown-negara" required>
         <option value="konoha">konoha</option>
         <option value="bekasi">Bekasi</option>
         <option value="dengklok-selatan" selected>Dengklok selatan</option>
@@ -160,13 +161,12 @@
       <input type="checkbox" name="bahasa" id="input-bahasa" />zimbabwe <br />
       <br /><br />
       <label for="bio-textarea">Bio</label><br /><br />
-      <textarea name="bio-textarea" id="bio" cols="30" rows="5" placeholder="Isi aku dong mas..." fixed></textarea>
+      <textarea name="bio-textarea" id="bio" cols="30" rows="5" placeholder="Isi aku dong mas..." fixed required></textarea>
       <br /><br />
       <div class="btn-input">
-        <!-- <a href="welcome.html" class="signIn-button">Sign In</a>
-        <a href="index.html" class="back-button">Kembali</a> -->
+        <!-- <a href="welcome.html" class="signIn-button">Sign In</a> -->
         <input type="submit" value="Sign in">
-        <input type="submit" value="Kembali">
+        <a href="index.html" class="back-button">Kembali</a>
       </div>
     </form>
   </body>
