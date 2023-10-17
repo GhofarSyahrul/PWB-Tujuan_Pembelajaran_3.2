@@ -8,22 +8,21 @@
       @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
       body {
         font-family: rubik, sans-serif;
-        background-color: #8CABFF;
+        background-color: #8cabff;
         margin: 25px;
         padding: 0;
       }
 
       h1 {
-        color: #35155D;
+        color: #35155d;
         font-size: 3rem;
         text-align: center;
         text-transform: uppercase;
-        
       }
 
       h2 {
         padding: -50em;
-        color: #512B81;
+        color: #512b81;
         text-align: center;
         text-transform: lowercase;
         padding-inline-start: 10px;
@@ -35,7 +34,7 @@
         font-family: poppins, sans-serif;
         max-width: 500px;
         margin: auto;
-        background: #4477CE;
+        background: #4477ce;
         opacity: 85%;
         padding: 6vh;
         height: 64rem;
@@ -63,7 +62,7 @@
       input[type="submit"] {
         text-decoration: none;
         margin-right: 2px;
-        background-color: #1F6E8C;
+        background-color: #1f6e8c;
         color: #fff;
         padding: 9px 18px;
         border: none;
@@ -71,18 +70,19 @@
         cursor: pointer;
         display: inline-block;
         margin-top: 20px;
+        text-transform: uppercase;
       }
 
       input[type="submit"]:hover {
-        background-color: #0E2954;
+        background-color: #0e2954;
       }
 
       a {
         text-decoration: none;
         margin-right: 2px;
-      } 
+      }
 
-       /* .signIn-button {
+      /* .signIn-button {
         background-color: #1F6E8C;
         color: #fff;
         padding: 9px 18px;
@@ -98,7 +98,7 @@
       } */
 
       .back-button {
-        background-color: #1F6E8C;
+        background-color: #1f6e8c;
         color: #fff;
         padding: 5px 10px;
         border: none;
@@ -107,10 +107,11 @@
         display: inline-block;
         margin-top: 20px;
         font-size: 15px;
+        text-transform: uppercase;
       }
 
       .back-button:hover {
-        background-color: #0E2954;
+        background-color: #0e2954;
       }
 
       .btn-input {
@@ -123,6 +124,26 @@
       input:focus::placeholder {
         color: transparent;
       }
+
+      @media (max-width: 600px) {
+        h1 {
+          margin-top: 40px;
+          color: #35155d;
+          font-size: 30px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        h2 {
+          padding: -50em;
+          color: #512b81;
+          text-align: center;
+          text-transform: lowercase;
+          padding-inline-start: 10px;
+          margin-top: -20px;
+          font-size: 25px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -131,16 +152,28 @@
     <br />
     <form action="welcome.html" method="get">
       <label for="First-nama">First Name :</label><br /><br />
-      <input type="text" name="First-nama" id="First-nama" placeholder="Isi dulu bre" required><br /><br />
+      <input
+        type="text"
+        name="First-nama"
+        id="First-nama"
+        placeholder="Isi dulu bre"
+        required
+      /><br /><br />
       <label for="last-name">Last Name :</label><br /><br />
-      <input type="text" name="last-name" id="last-name" placeholder="Ini juga bre janlup" required>
+      <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        placeholder="Ini juga bre janlup"
+        required
+      />
       <br /><br />
       <label for="gender">Gender</label><br /><br />
-      <input type="radio" name="input-gender" id="gender-option1" required/>
+      <input type="radio" name="input-gender" id="gender-option1" required />
       <label for="gender-option1">Lanang</label><br />
-      <input type="radio" name="input-gender" id="gender-option2" required/>
+      <input type="radio" name="input-gender" id="gender-option2" required />
       <label for="gender-option2">cwek</label><br />
-      <input type="radio" name="input-gender" id="gender-option3" required/>
+      <input type="radio" name="input-gender" id="gender-option3" required />
       <label for="gender-option3">Opsional</label>
       <br /><br />
       <label for="negara">Nationality</label><br /><br />
@@ -161,11 +194,19 @@
       <input type="checkbox" name="bahasa" id="input-bahasa" />zimbabwe <br />
       <br /><br />
       <label for="bio-textarea">Bio</label><br /><br />
-      <textarea name="bio-textarea" id="bio" cols="30" rows="5" placeholder="Isi aku dong mas..." fixed required></textarea>
+      <textarea
+        name="bio-textarea"
+        id="bio"
+        cols="30"
+        rows="5"
+        placeholder="Isi aku dong mas..."
+        fixed
+        required
+      ></textarea>
       <br /><br />
       <div class="btn-input">
         <!-- <a href="welcome.html" class="signIn-button">Sign In</a> -->
-        <input type="submit" value="Sign in">
+        <input type="submit" value="Sign in" />
         <a href="index.html" class="back-button">Kembali</a>
       </div>
     </form>
