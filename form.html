@@ -6,6 +6,11 @@
     <title>Halaman | SignUp</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+
       body {
         font-family: rubik, sans-serif;
         background-color: #8cabff;
@@ -82,7 +87,7 @@
         margin-right: 2px;
       }
 
-      /* .signIn-button {
+      .signIn-button {
         background-color: #1F6E8C;
         color: #fff;
         padding: 9px 18px;
@@ -91,22 +96,22 @@
         cursor: pointer;
         display: inline-block;
         margin-top: 20px;
+        text-transform: uppercase;
       } 
 
       .signIn-button:hover {
         background-color: #0E2954;
-      } */
+      }
 
       .back-button {
-        background-color: #1f6e8c;
+        background-color: transparent;
         color: #fff;
-        padding: 5px 10px;
+        padding: 9px 18px;
         border: none;
         border-radius: 7px;
         cursor: pointer;
         display: inline-block;
         margin-top: 20px;
-        font-size: 15px;
         text-transform: uppercase;
       }
 
@@ -205,8 +210,8 @@
       ></textarea>
       <br /><br />
       <div class="btn-input">
-        <!-- <a href="welcome.html" class="signIn-button">Sign In</a> -->
-        <input type="submit" value="Sign in" />
+        <a href="welcome.html" class="signIn-button">Sign In</a>
+        <!-- <input type="submit" value="Sign in" /> -->
         <a href="index.html" class="back-button">Kembali</a>
       </div>
     </form>
