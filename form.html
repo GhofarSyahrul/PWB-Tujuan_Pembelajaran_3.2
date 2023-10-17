@@ -60,25 +60,9 @@
         margin-right: 5px;
       }
 
-      /* input[type="submit"] {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 7px;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #0056b3;
-      } */
-
-      a {
+      input[type="submit"] {
         text-decoration: none;
         margin-right: 2px;
-      }
-
-      .signIn-button {
         background-color: #1F6E8C;
         color: #fff;
         padding: 9px 18px;
@@ -88,6 +72,26 @@
         display: inline-block;
         margin-top: 20px;
       }
+
+      input[type="submit"]:hover {
+        background-color: #0E2954;
+      }
+
+      /* a {
+        text-decoration: none;
+        margin-right: 2px;
+      } 
+
+       .signIn-button {
+        background-color: #1F6E8C;
+        color: #fff;
+        padding: 9px 18px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+      } 
 
       .signIn-button:hover {
         background-color: #0E2954;
@@ -106,7 +110,7 @@
 
       .back-button:hover {
         background-color: #0E2954;
-      }
+      } */
 
       .btn-input {
         align-items: center;
@@ -124,11 +128,11 @@
     <h1>Buat account Baru</h1>
     <h2>Sign up form</h2>
     <br />
-    <form>
+    <form action="welcome.html" method="get">
       <label for="First-nama">First Name :</label><br /><br />
-      <input type="text" name="First-nama" id="First-nama" placeholder="Isi dulu bre"><br /><br />
+      <input type="text" name="First-nama" id="First-nama" placeholder="Isi dulu bre" required><br /><br />
       <label for="last-name">Last Name :</label><br /><br />
-      <input type="text" name="last-name" id="last-name" placeholder="Ini juga bre janlup">
+      <input type="text" name="last-name" id="last-name" placeholder="Ini juga bre janlup" required>
       <br /><br />
       <label for="gender">Gender</label><br /><br />
       <input type="radio" name="input-gender" id="gender-option1" />
@@ -156,12 +160,13 @@
       <input type="checkbox" name="bahasa" id="input-bahasa" />zimbabwe <br />
       <br /><br />
       <label for="bio-textarea">Bio</label><br /><br />
-      <textarea name="bio-textarea" id="bio" cols="30" rows="5" placeholder="Isi aku dong mas..." fixed>
-      </textarea>
+      <textarea name="bio-textarea" id="bio" cols="30" rows="5" placeholder="Isi aku dong mas..." fixed></textarea>
       <br /><br />
       <div class="btn-input">
-        <a href="welcome.html" class="signIn-button">Sign In</a>
-        <a href="index.html" class="back-button">Kembali</a>
+        <!-- <a href="welcome.html" class="signIn-button">Sign In</a>
+        <a href="index.html" class="back-button">Kembali</a> -->
+        <input type="submit" value="Sign in">
+        <input type="submit" value="Kembali">
       </div>
     </form>
   </body>
